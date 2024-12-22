@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+
+.btn {
+    display: flex;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    min-width: 9rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#outlined {
+    background: #00000000;
+    border: solid rgb(255, 68, 0) 0.15rem;
+    color: rgb(255, 68, 0);
+    font-weight: 550;
+    font-family: Poppins, serif;
+    transition: 0.1s ease background, 0.2s ease-in-out color;
+}
+
+#outlined:hover {
+    background: orangered;
+    color: #fff;
+    box-shadow: 0 0 0.8rem orangered;
+}
+
+#outlined:active {
+    color: #000;
+    background: orangered;
+    transition: 0.05s ease color;
+}
+
+#filled {
+    border: 0.1rem solid #00000000;
+    background: rgba(255, 68, 0, 0.4);
+    color: #fff;
+    font-family: Montserrat, serif;
+    transition: 0.1s ease scale, 0.2s ease background;
+}
+
+#filled:hover {
+    background: orangered;
+    scale: 0.95;
+}
+
+#filled:active {
+    border: solid #000 0.1rem;
+    color: #000;
+}
+
+#shadowed {
+    color: #fff;
+    background: orangered;
+    border: 0;
+    border-radius: 0.5rem;
+    font-family: "Open Sans", serif;
+    font-weight: 500;
+    transition: background 0.1s ease, box-shadow 0.2s ease-in-out;
+}
+
+#shadowed:hover {
+    box-shadow: 0 0 1rem orangered;
+    background: #fff;
+    color: orangered;
+    padding-top: 0.8rem;
+    padding-bottom: 1.2rem;
+    transition: ease-in-out padding-bottom, 0.3s ease-in-out padding-top;
+}
+
+#shadowed:active {
+    background: orangered;
+    color: #fff;
+}
+
+#shadowed-II {
+    border: 0;
+    background: #000;
+    color: #fff;
+    border: 0.1rem solid #00000000;
+    transition: 0.1s background ease, 0.15s ease color, 0.2s ease box-shadow;
+}
+
+#shadowed-II:hover {
+    color: orangered;
+    transform: translateY(0.5rem) translateX(-0.5rem);
+    box-shadow: 1rem -1rem orangered;
+    transition: 0.1s ease-in-out border;
+}
+
+#shadowed-II:active {
+    background: #fff;
+    color: orangered;
+    border: 0.1rem solid orangered;
+}
+
+#blinker {
+    border: 0.15rem solid orangered;
+    background: #00000000;
+    border-radius: 8rem;
+    color: orangered;
+    font-family: Montserrat, serif;
+    font-weight: 550;
+    transition: 0.1s ease padding-block, 0.1s ease margin-block, 0.2s ease-in-out background, 0.5s ease-out color;
+}
+
+#blinker:hover {
+    background: rgb(255, 68, 0, 0.2);
+    padding-block: 0.5rem;
+    margin-block: 0.5rem;
+    color: #fff;
+    background: orangered;
+    transition: background 0.1s ease, color 0.05s ease-in-out;
+}
+
+#blinker:active {
+    background: #000;
+    color: orangered;
+}
+
+#rounded {
+    background: #000;
+    border: 0.1rem solid #000;
+    color: #fff;
+    font-family: Poppins, serif;
+    transition: 0.1s ease-in-out color, 0.15s ease-in color, 0.3s ease-in-out border-radius;
+}
+
+#rounded:hover {
+    border-radius: 7rem;
+    color: #fff;
+    transition: color 0.1s ease, 0.05s;
+    background: orangered;
+    border-color: orangered;
+}
+
+#rounded:active {
+    color: #000;
+}
